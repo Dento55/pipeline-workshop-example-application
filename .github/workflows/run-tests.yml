@@ -4,6 +4,7 @@ run-name: Deploy to ${{ github.event.client_payload.sut }} trigger via >${{ gith
 on:
   repository_dispatch:
     types: [trigger-tests]
+  workflow_dispatch:
 
 jobs:
   e2e-tests:
